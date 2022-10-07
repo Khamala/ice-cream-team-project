@@ -1,11 +1,23 @@
-@import './common';
+// Modern Nomalize
 
-@import './header';
-@import './hero';
-@import './products';
-@import './about';
-@import './advantages';
-@import './gallery';
-@import './reviews';
-@import './contacts';
-@import './footer';
+// Utils
+@import './utils/index';
+
+// Base
+@import './base';
+
+// Common
+@import './common/index';
+
+
+// Sections
+@import './header/index';
+@import './hero/index';
+@import './products/index';
+@import './about/index';
+@import './advantages/index';
+@import './gallery/index';
+@import './reviews/index';
+@import './contacts/index';
+@import './footer/index';
+@import './modals/index';
