@@ -1,13 +1,146 @@
 .hero__title {
-    color: white;
-    font-weight: 900;
-    font-size: 22px;
-    line-height: 1.62;
-    letter-spacing: 0.06em;
-  
+    color: #FCFCFC;
+    font-weight: 400;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
-    width: 181px;
-    height: 74px;
-    margin-left: 0;
-    margin-bottom: 20px;
-  }
+
+    font-family: 'Seymour One';
+    font-style: normal;
+  }  
+
+@media screen and (max-width: 768px) {
+    .hero__container{
+        display: block;
+    }
+
+    .hero__title {
+        font-size: 26px;
+        line-height: 1.27;
+
+        width: 247px;
+        // height: 392px;
+        margin-left: 0;
+        margin-bottom: 32px;
+      }  
+    
+      .hero__title--part {
+        font-size: 34px;
+        line-height: 1.26;
+      }  
+      
+    .button-products {
+        height: 24px;
+        width: 62px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 8px;
+        line-height: 1.25;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+        color: #131313;
+
+        margin-right: 8px;
+        margin-bottom: 28px;
+    }
+    .hero__options {
+        display: flex;
+    }
+    .description {
+        display: none;
+    }
+
+    .global-ice_cream {
+        width: 320px;
+        // height: 700px;
+        position: absolute;
+        bottom: 0;
+    }
+    .objects {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero__container{
+        display: flex;
+    }
+    .hero__title {
+        font-size: 18px;
+        line-height: 1.28;
+
+        width: 181px;
+        // height: 74px;
+        margin-left: 0;
+        margin-bottom: 20px;
+
+        font-family: 'Seymour One';
+        font-style: normal;
+      }  
+    .hero__title--part {
+        font-size: 24px;
+        line-height: 0.82;
+      }   
+
+      .description {
+        display: flex;
+        align-items: center;
+    }
+    .description-item {
+        width: 151px;
+        height: 85px;
+    }
+
+    .global-ice_cream {
+        position: absolute;
+        left: 418px;
+        top: 18.08px;
+        width: 257px;
+        // height: 324.92px;
+    }
+    .objects {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero__title {
+        font-size: 38px;
+        line-height: 1.26;
+
+        width: 367px;
+        // height: 144px;
+        margin-left: 0;
+        margin-bottom: 28px;
+      } 
+    .hero__title--part {
+        font-size: 38px;
+        line-height: 1.26;
+      }  
+      
+    .description {
+        display: flex;
+        align-items: center;
+    }
+    .description-item {
+        width: 200px;
+        height: 80px;
+    }
+
+    .global-ice_cream {
+        position: absolute;
+        top: 29px;
+        left: 651px;
+        width: 447px;
+        // height: 561px;
+    }
+    
+    .objects {
+        display: block;
+    }
+}
+
