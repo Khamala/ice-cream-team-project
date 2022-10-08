@@ -1,0 +1,143 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        width: 480px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+.container-about {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .about__subtitle {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 1.23;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #FCFCFC;
+    }
+
+    .about__title {
+        margin-top: 12px;
+        margin-bottom: 82px;
+        font-family: 'Seymour One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 1.25;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #FCFCFC;
+    }
+
+    .about__box-traditions {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .about__traditions-production {
+        font-size: 16px;
+        line-height: 176%;
+        letter-spacing: 0.04em;
+        color: #FCFCFC;
+    }
+
+    .about__traditions :not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    .about__traditions {
+        margin-right: 121px;
+        margin-bottom: 48px;
+    }
+
+    .about__modal-button {
+        width: 164px;
+        cursor: pointer;
+        background-color: #F8D24E;
+        color: #131313;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.29;
+        text-align: center;
+        border-radius: 10px;
+        border: none;
+        padding: 12px 34px;
+
+
+        transition: background-color $default-transition-time $default-transition-function;
+
+
+        &--with-hover {
+
+            &:hover {
+                background-color: $button-hover-bg-color;
+            }
+        }
+
+        &--with-focus {
+
+            &:focus {
+                border: 2px solid #0A8817;
+                color: #FCFCFC;
+            }
+        }
+    }
+
+    .photo-cow {
+        position: relative;
+        width: 500px;
+        height: 529px;
+
+    }
+
+    .background-cow {
+        background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+        box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+        border-radius: 250px;
+        z-index: 1;
+        width: 500px;
+        height: 500px;
+    }
+
+    .cow {
+        position: absolute;
+        top: 39px;
+        z-index: 2;
+        width: 490px;
+        height: 490px;
+    }
+
+}
+
+
+
