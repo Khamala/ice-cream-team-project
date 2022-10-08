@@ -248,6 +248,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.86;
+    letter-spacing: 0.04em;
   }
   .address-time {
     font-weight: 500;
@@ -310,5 +311,34 @@
   }
 }
 // desktop
-// @media screen and (min-width: 1200px) {
-// }
+@media screen and (min-width: $desktop) {
+  .contacts-list {
+    gap: 32px;
+
+    margin-bottom: 64px;
+  }
+  .contacts-item {
+    max-width: 368px;
+
+    padding: 40px 40px;
+  }
+
+  .address-item {
+    font-size: 16px;
+  }
+  .address-item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  .address-link {
+    font-size: 16px;
+  }
+  .address-subtitle {
+    font-size: 16px;
+  }
+  .address-time {
+    font-size: 16px;
+  }
+  .contacts-link {
+    font-size: 16px;
+  }
+}
