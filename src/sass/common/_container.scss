@@ -13,17 +13,19 @@
   .container {
     width: 768px;
     margin-right: auto;
-    margin-left: auto;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
+    padding-left: 20px;
+    padding-right: 20px;
 
-// .test__container {
-//         height: 100px;
-//         width: 100px;
-//        background-color: red;
-//     }
+
+    @media screen and (min-width: $tablet) {
+            width: $tablet;
+            padding-left: 32px;
+            padding-right: 32px;
+    }
+    
+    @media screen and (min-width: $desktop) {
+            width: $desktop;
+            padding-left: 16px;
+            padding-right: 16px;
+    }
+}
