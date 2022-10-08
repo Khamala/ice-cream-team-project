@@ -82,6 +82,9 @@
 
     color: #d6936d;
 
+    transition: text-decoration $default-transition-time
+      $default-transition-function;
+
     &:hover,
     &:focus {
       text-decoration: underline;
@@ -123,6 +126,10 @@
 
     background-color: $accent-color;
 
+    transition: background-color $default-transition-time
+        $default-transition-function,
+      color $default-transition-time $default-transition-function;
+
     &:hover {
       background-color: $button-hover-bg-color;
     }
@@ -142,6 +149,11 @@
     border: 2px solid;
     border-radius: 10px;
     border-color: $accent-color;
+
+    transition: background-color $default-transition-time
+        $default-transition-function,
+      color $default-transition-time $default-transition-function,
+      border-color $default-transition-time $default-transition-function;
 
     &:hover {
       border-color: $button-hover-bg-color;
@@ -238,6 +250,12 @@
 
     color: #d6936d;
 
+    transition: text-decoration $default-transition-time
+      $default-transition-function;
+
+    transition: text-decoration $default-transition-time
+      $default-transition-function;
+
     &:hover,
     &:focus {
       text-decoration: underline;
@@ -278,6 +296,9 @@
     line-height: 1.29;
 
     background-color: $accent-color;
+    transition: background-color $default-transition-time
+        $default-transition-function,
+      color $default-transition-time $default-transition-function;
 
     &:hover {
       background-color: $button-hover-bg-color;
@@ -298,6 +319,10 @@
     border: 2px solid;
     border-radius: 10px;
     border-color: $accent-color;
+    transition: background-color $default-transition-time
+        $default-transition-function,
+      color $default-transition-time $default-transition-function,
+      border-color $default-transition-time $default-transition-function;
 
     &:hover {
       border-color: $button-hover-bg-color;
