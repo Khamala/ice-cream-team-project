@@ -1,8 +1,31 @@
 .button {
+    padding: 12px 34px;
+
     cursor: pointer;
-    background-color: $accent-color;
+    background-color: inherit;
     border: none;
     border-radius: 10px;
 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+
     transition: background-color $default-transition-time $default-transition-function;
-}
+
+
+    &--with-hover {
+    
+            &:hover {
+                background-color: $button-hover-bg-color;
+            }
+        }
+    
+    &--with-focus {
+    
+        &:focus {
+            border: 2px solid #0A8817;
+            color: #FCFCFC;
+        }
+    }
+}       
