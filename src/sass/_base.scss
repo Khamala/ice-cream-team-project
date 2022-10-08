@@ -1,8 +1,8 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    background-color: $primary-background-color;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: $primary-background-color;
 }
 
 h1,
@@ -13,10 +13,13 @@ h5,
 h6,
 p,
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
+}
+.link {
+  text-decoration: none;
 }
