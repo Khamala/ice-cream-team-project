@@ -5,6 +5,8 @@
         width: 40px;
         height: 40px;
 
+        transition: width $default-transition-time $default-transition-function, stroke-width $default-transition-time $default-transition-function;
+
         .products-button:hover & {
             width: 50px;
         }
@@ -41,9 +43,9 @@
 
 .modal-ingredients {
     position: fixed;
-    padding: 32px 40px;
+    padding: 32px 20px;
     // height: 995px;
-    width: 568px;
+    width: 100vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -53,9 +55,9 @@
     border-radius: 10px;
 
     &__text {
-        margin-bottom: 32px;
+        margin-bottom: 24px;
         font-family: 'Seymour One';
-        font-size: 20px;
+        font-size: 4.16vw;
         line-height: 1.4;
         text-align: center;
         color: $primary-inverse-text-color;
@@ -63,8 +65,8 @@
 
     &__box-image {
         background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7), #D9D9D9);
-        width: 131px;
-        height: 138px;
+        width: 27.9vw;
+        height: 28.75vw;
         border-radius: 50%;
         margin-bottom: 24px;
         margin-left: auto;
@@ -74,15 +76,15 @@
 
     &__image {
         display: block;
-        height: 131px;
-        width: 131px;
+        width: 27.9vw;
+        height: 27.9vw;;
         border-radius: 50%;
     }
 
     &__nutritional-value {
         display: flex;
         justify-content: center;
-        column-gap: 20px;
+        column-gap: 2.08vw;
         margin-bottom: 48px;
     }
 
@@ -90,16 +92,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        row-gap: 7px;
-        width: 65px;
-        height: 90px;
-        margin-top: -1px;
+        row-gap: 3px;
+        width: 11vw;
+        height: 15vw;
 
         border: 2px solid #9CBE8F;
-        border-radius: 40px;
+        border-radius: 8.33vw;
 
-        font-size: 12px;
-        line-height: 1.25;
+        font-size: 2.1vw;
+        line-height: 1.22;
     }
 
     &__amount {
@@ -107,10 +108,12 @@
         justify-content: center;
         align-items: center;
         background: #9CBE8F;
-        width: 53px;
-        height: 53px;
+        width: 10.04vw;
+        height: 10.04vw;
+        margin-top: -2px;
 
         font-weight: 500;
+        line-height: 2.8;
         border-radius: 50%;
         box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
     }    
@@ -142,7 +145,8 @@
     }
 
     &__form {
-        width: 368px;
+        width: 100%;
+        // width: 368px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -150,6 +154,10 @@
     &__form-point {
         display: block;
         margin-bottom: 16px;
+
+        &--margin {
+            margin-bottom: 32px;
+        }
     }
 
     &__form-field {
@@ -177,7 +185,6 @@
 
     &__comments {
         resize: none;
-        margin-bottom: 32px;
     }
 
     &__button {
@@ -186,6 +193,17 @@
         margin-left: auto;
 
         background-color: $accent-color;
+
+        transition: color $default-transition-time $default-transition-function, background-color $default-transition-time $default-transition-function;
+
+        &:hover {
+            background-color: $button-hover-bg-color;
+        }
+
+        &:focus {
+            color: $primary-text-color;
+            background-color: $button-hover-bg-color;
+        }
     }
 }
 
@@ -195,6 +213,11 @@
     padding: 0;
     top: 20px;
     right: 20px;
+    line-height: 0;
+
+    background-color: transparent;
+
+    transition: stroke-width $default-transition-time $default-transition-function;
 
     &:hover,
     &:focus {
@@ -203,4 +226,71 @@
     }
 }
 
+@media screen and (min-width: 480px) {
+    .modal-ingredients {
+        width: 280px;
 
+        &__text {
+            font-size: 20px;
+        }
+
+        &__box-image {
+            width: 131px;
+            height: 138px;
+        }
+
+        &__image {
+            width: 131px;
+            height: 131px;
+        }
+                
+        &__nutritional-value {
+            column-gap: 10px;
+        }
+        
+        &__point {
+            row-gap: 5px;
+            width: 53px;
+            height: 72px;
+
+            border-radius: 25px;
+            font-size: 9px;
+        }
+
+        &__amount {
+            width: 43px;
+            height: 43px;
+        }
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal-ingredients {
+        padding: 32px 40px;
+        width: 568px;
+
+        &__nutritional-value {
+            column-gap: 20px;
+        }
+
+        &__point {
+            row-gap: 7px;
+            width: 65px;
+            height: 90px;
+        
+            border-radius: 40px;
+            font-size: 12px;
+        }
+
+        &__amount {
+            width: 53px;
+            height: 53px;
+        }
+
+        &__form {
+            width: 368px;
+        }
+    }
+
+}
