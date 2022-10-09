@@ -1,6 +1,7 @@
 .container {
     margin-left: auto;
     margin-right: auto;
+    padding-top: 60px;
     width: 100%;
 }
 
@@ -22,11 +23,270 @@
     }
 }
 
+
+
+@media screen and (max-width: 767px) {
+
+.container-about {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+        .about__subtitle {
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 1.22;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FCFCFC;
+        }
+    
+        .about__title {
+            margin-top: 12px;
+            margin-bottom: 32px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 200px;
+            font-family: 'Seymour One';
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 1.27;
+            text-align: center;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #FCFCFC;
+        }
+
+    .about__traditions-production {
+        max-width: 220px;
+        font-size: 12px;
+        line-height: 176%;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: #FCFCFC;
+        margin-left: auto;
+        margin-right: auto;
+         }
+
+      .part-traditions {
+        display: none;
+      }
+
+    .about__traditions {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+          }
+
+.about__traditionc-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__modal-button {
+    width: 164px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    background-color: #F8D24E;
+    color: #131313;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    padding: 12px 34px;
+    
+
+
+
+
+    
+
+        &:hover {
+            background-color: $button-hover-bg-color;
+        }
+    
+
+    
+
+        &:focus {
+            border: 2px solid #0A8817;
+            color: #FCFCFC;
+        }
+    }
+
+
+.photo-cow {
+    position: relative;
+    width: 279.3px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.background-cow {
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+    border-radius: 140.182px;
+    z-index: 1;
+    width: 278px;
+    height: 278px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cow {
+    position: absolute;
+    top: 21.82px;
+    z-index: 2;
+    width: 278px;
+    height: 278px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+}
+
+
+//tablet//
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+.container-about {
+       padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .about__subtitle {
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 1.23;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #FCFCFC;
+    }
+
+    .about__title {
+        margin-top: 12px;
+        margin-bottom: 82px;
+        font-family: 'Seymour One';
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 1.26;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #FCFCFC;
+    }
+
+    .about__box-traditions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .about__traditions-production {
+        font-size: 12px;
+        line-height: 176%;
+        letter-spacing: 0.04em;
+        min-width: 336px;
+        color: #FCFCFC;
+    }
+
+    .about__traditions :not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    .about__traditions {
+        margin-bottom: 48px;
+    }
+
+    .about__modal-button {
+        width: 164px;
+        cursor: pointer;
+        background-color: #F8D24E;
+        color: #131313;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.29;
+        text-align: center;
+        border-radius: 10px;
+        border: none;
+        padding: 12px 34px;
+
+
+        transition: background-color $default-transition-time $default-transition-function;
+
+
+        &--with-hover {
+
+            &:hover {
+                background-color: $button-hover-bg-color;
+            }
+        }
+
+        &--with-focus {
+
+            &:focus {
+                border: 2px solid #0A8817;
+                color: #FCFCFC;
+            }
+        }
+    }
+
+    .photo-cow {
+        position: relative;
+        width: 336px;
+        height: 355.88px;
+
+    }
+
+    .background-cow {
+        background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
+        border-radius: 165.879px;
+        z-index: 1;
+        width: 334.65px;
+        height: 330px;
+    }
+
+    .cow {
+        position: absolute;
+        top: 28.88px;
+        z-index: 2;
+        width: 334.65px;
+        height: 330px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+//desktop//
+
+
 @media screen and (min-width: 1200px) {
 
 .container-about {
-        padding-top: 60px;
-        padding-bottom: 60px;
         padding-left: 12px;
         padding-right: 12px;
     }
@@ -60,6 +320,7 @@
     .about__box-traditions {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 100px;
     }
 
@@ -67,6 +328,7 @@
         font-size: 16px;
         line-height: 176%;
         letter-spacing: 0.04em;
+        max-width: 463px;
         color: #FCFCFC;
     }
 
