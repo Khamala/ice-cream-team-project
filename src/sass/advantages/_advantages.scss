@@ -1,0 +1,130 @@
+.advantages {
+    width: 100vw;
+    margin-bottom: 60px;
+    text-align: center;
+    color: $primary-text-color;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 21px;
+    }
+
+    &__point {
+        width: 47.9vw;
+    }
+
+    &__point::before {
+        display: block;
+        content: "";
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 16px;
+        height: 10.41vw;
+        width: 10.41vw;
+        background-size: 7.5vw;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: $accent-color;
+        border-radius: 50%;
+    }
+
+    &__point:nth-child(1)::before {
+        background-image: url(../images/advantages/cow.png);
+    }
+
+    &__point:nth-child(2)::before {
+        background-image: url(../images/advantages/ice_crema.png);
+    }
+
+    &__point:nth-child(3)::before {
+        background-image: url(../images/advantages/weight.png);
+    }
+
+    &__amount {
+        margin-bottom: 16px;
+        font-weight: 700;
+        font-size: 7.5vw;
+        line-height: 1.22;
+        letter-spacing: 0.04em;
+        margin-left: auto;
+    }
+
+    &__text {
+        font-size: 2.5vw;
+        line-height: 1.75;
+        letter-spacing: 0.02em;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .advantages {
+        &__point {
+            width: 230px;
+        }
+
+        &__point::before {
+            height: 50px;
+            width: 50px;
+            background-size: 36px;
+        }
+
+        &__amount {
+            font-size: 36px;
+        }
+
+        &__text {
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .advantages {
+        margin-bottom: 180px;
+
+        &__list {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 32px;
+        }
+
+        &__point {
+            width: 152px;
+        }
+
+        &__point::before {
+            margin-bottom: 13px;
+        }
+
+        &__amount {
+            font-size: 48px;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .advantages {
+        &__point {
+            width: 368px;
+        }
+
+        &__point::before {
+            margin-bottom: 49px;
+        }
+
+        &__amount {
+            font-size: 58px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+}
