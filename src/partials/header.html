@@ -1,1 +1,64 @@
-<section></section>
+<section class="header">
+    <div class="container header-container">
+        <picture>
+            <source
+              srcset="./images/header/desktop/logo-desktop.png 1x, ./images/header/desktop/logo-desktop2x.png 2x"
+              media="(min-width: 1200px)"
+            />
+            <source
+            srcset="./images/header/tablet/logo-tablet.png 1x, ./images/header/tablet/logo-tablet2x.png 2x"
+              media="(min-width: 768px)"
+            />
+
+            <source
+            srcset="./images/header/mobile/logo-mobile.png 1x, ./images/header/mobile/logo-mobile2x.png 2x"
+              media="(max-width: 767px)"
+            />
+
+            <img
+              class="logo"
+              src="./images/header/desktop/logo-desktop.png"
+              alt="логотип"
+            />
+          </picture><span class="logo-part">ce</span>
+    <nav class="header-navigation">
+      <ul class="site-nav list">
+        <li class="header-item"><a href="" class="header-link link current">Home</a></li>
+        <li class="header-item"><a href="" class="header-link link">How it’s made?</a></li>
+        <li class="header-item"><a href="" class="header-link link">Our products</a></li>
+        <li class="header-item"><a href="" class="header-link link">Contact</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="button-menu" data-menu-open>
+        <svg class="icon-burger" width="32" height="32">
+          <use href="./images/sprite.svg#icon-burger-icon"></use>
+        </svg>  
+      </button>
+    </div>
+   <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__button-close" data-menu-close>
+            <svg class="mobile-menu__icon-close" width="32" height="32">
+              <use href="./images/sprite.svg#icon-modal-close-icon"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item item">
+              <a href="" class="mobile-menu__link link current">Home</a>
+            </li>
+            <li class="mobile-menu__item item">
+              <a href="" class="mobile-menu__link link">How it’s made?</a>
+            </li>
+            <li class="mobile-menu__item item">
+              <a href="" class="mobile-menu__link link">Our products</a>
+            </li>
+            <li class="mobile-menu__item item">
+                <a href="" class="mobile-menu__link link">Contact</a>
+              </li>
+          </ul>
+          <button type="button" class="button button-buy">Buy now</button>
+        </div> 
+
+    <button type="button" class="button button-buy">Buy now</button>
+    </div>  
+</section>
