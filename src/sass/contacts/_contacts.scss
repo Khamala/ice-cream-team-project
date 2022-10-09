@@ -113,6 +113,10 @@
   }
   .button-franchise,
   .button-locations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 196px;
     height: 42px;
 
@@ -139,10 +143,6 @@
     }
   }
   .button-franchise {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     margin-bottom: 0px;
 
     background-color: $primary-background-color;
@@ -164,6 +164,9 @@
       color: $primary-text-color;
       background-color: $primary-background-color;
     }
+  }
+  .icon-button {
+    margin-left: 8px;
   }
 }
 
@@ -286,6 +289,10 @@
   }
   .button-franchise,
   .button-locations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 196px;
     height: 42px;
 
@@ -309,10 +316,6 @@
     }
   }
   .button-franchise {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     margin-right: 0px;
 
     background-color: $primary-background-color;
@@ -333,6 +336,9 @@
       color: $primary-text-color;
       background-color: $primary-background-color;
     }
+  }
+  .icon-button {
+    margin-left: 8px;
   }
 }
 // desktop
