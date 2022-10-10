@@ -21,7 +21,7 @@
       transform: translate(-50%, -50%) scale(1.1);
     }
   }
-  .close-button {
+  .modal-locations_close-button {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -67,7 +67,7 @@
     }
   }
 
-  .close-button {
+  .modal-locations_close-button {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -89,7 +89,7 @@
       fill: currentColor;
     }
   }
-  .icon-close {
+  .modal-locations_icon-close {
     width: 20px;
     height: 20px;
   }
@@ -104,10 +104,20 @@
 
 // Phone
 @media screen and (max-width: $mobile-max) {
-  .modal-form {
+  .modal-locations_form {
     padding: 28px 28px;
   }
-  .location-img {
+  .modal-locations_form_title {
+    text-align: center;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+
+    font-family: 'Seymour One';
+    line-height: 1.5;
+  }
+  .modal-locations_img {
     width: 100%;
     height: 199px;
 
@@ -115,13 +125,13 @@
 
     border-radius: 10px;
 
-    .modal-img_link:hover &,
-    .modal-img_link:focus & {
+    .modal-locations_img-link:hover &,
+    .modal-locations_img-link:focus & {
       width: 101%;
       height: 201px;
     }
   }
-  .modal-link {
+  .modal-locations_link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -154,11 +164,22 @@
 
 // tablet
 @media screen and (min-width: $tablet) {
-  .modal-form_title.margin {
+  .modal-locations_form {
+    padding: 32px 60px;
+  }
+  .modal-locations_form_title {
+    text-align: center;
+
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 32px;
+
+    font-family: 'Seymour One';
+    line-height: 1.4;
+    font-size: 20px;
   }
 
-  .location-img {
+  .modal-locations_img {
     width: 448px;
     height: 260px;
 
@@ -166,15 +187,18 @@
 
     border-radius: 10px;
 
-    .modal-img_link:hover &,
-    .modal-img_link:focus & {
+    .modal-locations_img-link:hover &,
+    .modal-locations_img-link:focus & {
       width: 450px;
       height: 265px;
-      box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+
+      box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.12),
+        5px 5px 10px 5px rgba(0, 0, 0, 0.06),
+        5px 5px 10px 5px rgba(0, 0, 0, 0.16);
     }
   }
 
-  .modal-link {
+  .modal-locations_link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -204,8 +228,6 @@
     }
   }
 }
-
-
 
 // Khama
 
