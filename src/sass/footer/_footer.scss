@@ -36,7 +36,16 @@
     border-radius: 50%;
     width: 32px;
     height: 32px;
+
+    color: $primary-background-color;
+    fill: currentColor;
     background-color: $accent-color;
+
+    &:hover,
+    &:focus {
+      color: $primary-text-color;
+      fill: currentColor;
+    }
   }
   .footer-title_tel {
     margin-bottom: 16px;
@@ -129,7 +138,16 @@
     border-radius: 50%;
     width: 34px;
     height: 34px;
+
+    color: $primary-background-color;
+    fill: currentColor;
     background-color: $accent-color;
+
+    &:hover,
+    &:focus {
+      color: $primary-text-color;
+      fill: currentColor;
+    }
   }
   .footer-container_copiright::before {
     content: '';
