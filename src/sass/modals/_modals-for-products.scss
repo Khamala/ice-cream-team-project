@@ -54,6 +54,8 @@
     border: 2px solid $accent-color;
     border-radius: 10px;
 
+    z-index: 10;
+
     &__text {
         margin-bottom: 24px;
         font-family: 'Seymour One';
