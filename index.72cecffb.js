@@ -1,0 +1,2 @@
+!function(){var e={openIceCaffeeModalBtn:document.querySelector("[data-ice-caffee-modal-open]"),closeIceCaffeeModalBtn:document.querySelector("[data-ice-caffee-modal-close]"),modal:document.querySelector("[data-ice-caffee-modal]")};function c(){e.modal.classList.toggle("ice-caffee-modal__is-hidden"),document.body.classList.toggle("no-scroll")}e.openIceCaffeeModalBtn.addEventListener("click",c),e.closeIceCaffeeModalBtn.addEventListener("click",c)}();
+//# sourceMappingURL=index.72cecffb.js.map

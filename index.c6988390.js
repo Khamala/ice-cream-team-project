@@ -1,0 +1,2 @@
+!function(){var e={openIceCreamModalBtn:document.querySelector("[data-products-modal-open]"),closeIceCreamModalBtn:document.querySelector("[data-products-modal-close]"),modal:document.querySelector("[data-products-modal]")};function o(){e.modal.classList.toggle("products-modal__is-hidden"),document.body.classList.toggle("no-scroll")}e.openIceCreamModalBtn.addEventListener("click",o),e.closeIceCreamModalBtn.addEventListener("click",o)}();
+//# sourceMappingURL=index.c6988390.js.map
