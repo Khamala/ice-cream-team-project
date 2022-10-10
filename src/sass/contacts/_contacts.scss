@@ -19,6 +19,15 @@
     border-radius: 24px;
 
     background-color: $primary-text-color;
+
+    transition: box-shadow $default-transition-time $default-transition-function;
+
+    &:hover,
+    &:focus {
+      box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.12),
+        5px 5px 10px 5px rgba(0, 0, 0, 0.06),
+        5px 5px 10px 5px rgba(0, 0, 0, 0.16);
+    }
   }
 
   .contacts-title {
@@ -189,6 +198,15 @@
     border-radius: 24px;
 
     background-color: $primary-text-color;
+
+    transition: box-shadow $default-transition-time $default-transition-function;
+
+    &:hover,
+    &:focus {
+      box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.12),
+        5px 5px 10px 5px rgba(0, 0, 0, 0.06),
+        5px 5px 10px 5px rgba(0, 0, 0, 0.16);
+    }
   }
 
   .contacts-title {
@@ -315,6 +333,7 @@
       color: $primary-text-color;
     }
   }
+
   .button-franchise {
     margin-right: 0px;
 
@@ -322,6 +341,7 @@
     border: 2px solid;
     border-radius: 10px;
     border-color: $accent-color;
+
     transition: background-color $default-transition-time
         $default-transition-function,
       color $default-transition-time $default-transition-function,
