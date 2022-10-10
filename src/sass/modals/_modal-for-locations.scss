@@ -35,7 +35,7 @@
 
     cursor: pointer;
 
-    transition: color $accent-color;
+    transition: fill $default-transition-time $default-transition-function;
 
     &:hover,
     &:focus {
@@ -81,7 +81,7 @@
 
     cursor: pointer;
 
-    transition: color $accent-color;
+    transition: fill $default-transition-time $default-transition-function;
 
     &:hover,
     &:focus {
@@ -125,6 +125,8 @@
 
     border-radius: 10px;
 
+    transition: box-shadow $default-transition-time $default-transition-function;
+
     .modal-locations_img-link:hover &,
     .modal-locations_img-link:focus & {
       width: 101%;
@@ -150,6 +152,10 @@
     color: $primary-inverse-text-color;
     background-color: $accent-color;
     border-radius: 10px;
+
+    transition: background-color $default-transition-time
+        $default-transition-function,
+      color $default-transition-time $default-transition-function;
 
     &:hover {
       background-color: $button-hover-bg-color;
@@ -187,6 +193,8 @@
 
     border-radius: 10px;
 
+    transition: box-shadow $default-transition-time $default-transition-function;
+
     .modal-locations_img-link:hover &,
     .modal-locations_img-link:focus & {
       width: 450px;
@@ -217,6 +225,10 @@
     color: $primary-inverse-text-color;
     background-color: $accent-color;
     border-radius: 10px;
+
+    transition: background-color $default-transition-time
+        $default-transition-function,
+      color $default-transition-time $default-transition-function;
 
     &:hover {
       background-color: $button-hover-bg-color;
