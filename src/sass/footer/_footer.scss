@@ -1,5 +1,9 @@
 // Phone
 @media screen and (max-width: $mobile-max) {
+  .footer-container {
+    padding-top: 1035px;
+    padding-bottom: 62px;
+  }
   .footer-title {
     margin-bottom: 16px;
 
@@ -90,6 +94,10 @@
 
 // tablet
 @media screen and (min-width: $tablet) {
+  .footer-container {
+    padding-top: 246px;
+    padding-bottom: 13px;
+  }
   .footer-container_text {
     display: flex;
     justify-content: space-between;
@@ -188,6 +196,10 @@
 
 // desktop
 @media screen and (min-width: $desktop) {
+  .footer-container {
+    padding-top: 548px;
+    padding-bottom: 11px;
+  }
   .footer-container_text {
     display: flex;
   }
