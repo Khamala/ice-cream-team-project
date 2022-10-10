@@ -1,12 +1,12 @@
 (() => {
     const refs = {
-      openFranchiseModalBtn: document.querySelector('[data-products-modal-open]'),
-      closeFranchiseModalBtn: document.querySelector('[data-products-modal-close]'),
+      openIceCreamModalBtn: document.querySelector('[data-products-modal-open]'),
+      closeIceCreamModalBtn: document.querySelector('[data-products-modal-close]'),
       modal: document.querySelector('[data-products-modal]'),
     };
   
-    refs.openFranchiseModalBtn.addEventListener('click', toggleModal);
-    refs.closeFranchiseModalBtn.addEventListener('click', toggleModal);
+    refs.openIceCreamModalBtn.addEventListener('click', toggleModal);
+    refs.closeIceCreamModalBtn.addEventListener('click', toggleModal);
   
     function toggleModal() {
       refs.modal.classList.toggle('products-modal__is-hidden');

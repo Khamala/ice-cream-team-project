@@ -1,0 +1,311 @@
+.products-button {
+    padding: 10px 10px;
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+
+        transition: width $default-transition-time $default-transition-function, stroke-width $default-transition-time $default-transition-function;
+
+        .products-button:hover & {
+            width: 50px;
+        }
+
+        .products-button:focus & {
+            width: 50px;
+            stroke: $primary-inverse-text-color;
+            stroke-width: 3px;
+        }
+    }
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    visibility: visible;
+
+    background-color: rgba(0, 0, 0, .2);
+
+    transition: opacity $default-transition-time $default-transition-function, visibility $default-transition-time $default-transition-function;
+
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+
+
+.modal-ingredients {
+    position: fixed;
+    padding: 32px 20px;
+    // height: 995px;
+    width: 100vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: $modals-background-color;
+    border: 2px solid $accent-color;
+    border-radius: 10px;
+
+    z-index: 10;
+
+    &__text {
+        margin-bottom: 24px;
+        font-family: 'Seymour One';
+        font-size: 4.16vw;
+        line-height: 1.4;
+        text-align: center;
+        color: $primary-inverse-text-color;
+    }
+
+    &__box-image {
+        background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7), #D9D9D9);
+        width: 27.9vw;
+        height: 28.75vw;
+        border-radius: 50%;
+        margin-bottom: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 5.26027px 19.726px rgba(10, 136, 23, .25);
+    }
+
+    &__image {
+        display: block;
+        width: 27.9vw;
+        height: 27.9vw;
+        ;
+        border-radius: 50%;
+    }
+
+    &__nutritional-value {
+        display: flex;
+        justify-content: center;
+        column-gap: 2.08vw;
+        margin-bottom: 48px;
+    }
+
+    &__point {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 3px;
+        width: 11vw;
+        height: 15vw;
+
+        border: 2px solid #9CBE8F;
+        border-radius: 8.33vw;
+
+        font-size: 2.1vw;
+        line-height: 1.22;
+    }
+
+    &__amount {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #9CBE8F;
+        width: 10.04vw;
+        height: 10.04vw;
+        margin-top: -2px;
+
+        font-weight: 500;
+        line-height: 2.8;
+        border-radius: 50%;
+        box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+    }
+
+    &__table {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
+    &__table-title {
+        margin-bottom: 24px;
+
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    &__table-row {
+        display: flex;
+        justify-content: space-between;
+
+        font-size: 14px;
+        line-height: 1.76;
+        letter-spacing: 0.04em;
+
+        &:not(:last-child) {
+            margin-bottom: 11px;
+        }
+    }
+
+    &__form {
+        width: 100%;
+        // width: 368px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__form-point {
+        display: block;
+        margin-bottom: 16px;
+
+        &--margin {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__form-field {
+        padding: 11px 16px;
+        width: 100%;
+
+        background-color: rgba(248, 210, 78, 0.1);
+        border: 2px solid $primary-background-color;
+        border-radius: 10px;
+
+        transition: border-color $default-transition-time $default-transition-function;
+
+        &:hover,
+        &:focus {
+            border-color: $accent-color;
+            outline: none;
+        }
+
+        &::placeholder {
+            font-size: 14px;
+            line-height: 1.4;
+            color: $primary-inverse-text-color;
+        }
+    }
+
+    &__comments {
+        resize: none;
+    }
+
+    &__button {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+
+        background-color: $accent-color;
+
+        transition: color $default-transition-time $default-transition-function, background-color $default-transition-time $default-transition-function;
+
+        &:hover {
+            background-color: $button-hover-bg-color;
+        }
+
+        &:focus {
+            color: $primary-text-color;
+            background-color: $button-hover-bg-color;
+        }
+    }
+}
+
+
+.close-modal-button {
+    position: absolute;
+    padding: 0;
+    top: 20px;
+    right: 20px;
+    line-height: 0;
+
+    background-color: transparent;
+
+    transition: stroke-width $default-transition-time $default-transition-function;
+
+    &:hover,
+    &:focus {
+        stroke: $primary-inverse-text-color;
+        stroke-width: 3px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .modal-ingredients {
+        width: 280px;
+
+        &__text {
+            font-size: 20px;
+        }
+
+        &__box-image {
+            width: 131px;
+            height: 138px;
+        }
+
+        &__image {
+            width: 131px;
+            height: 131px;
+        }
+
+        &__nutritional-value {
+            column-gap: 10px;
+        }
+
+        &__point {
+            row-gap: 5px;
+            width: 53px;
+            height: 72px;
+
+            border-radius: 25px;
+            font-size: 9px;
+        }
+
+        &__amount {
+            width: 43px;
+            height: 43px;
+        }
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal-ingredients {
+        padding: 32px 40px;
+        width: 568px;
+
+        &__nutritional-value {
+            column-gap: 20px;
+        }
+
+        &__point {
+            row-gap: 7px;
+            width: 65px;
+            height: 90px;
+
+            border-radius: 40px;
+            font-size: 12px;
+        }
+
+        &__amount {
+            width: 53px;
+            height: 53px;
+        }
+
+        &__form {
+            width: 368px;
+        }
+    }
+
+}
+
+
+
+
+
+
+.ice-caffee-modal__is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+
