@@ -1,6 +1,6 @@
 // Phone
 @media screen and (max-width: $mobile-max) {
-  .modal {
+  .modal-franchise {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,7 +21,7 @@
       transform: translate(-50%, -50%) scale(1.1);
     }
   }
-  .close-button {
+  .franchise-close-button {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -47,7 +47,7 @@
 
 // tablet
 @media screen and (min-width: $tablet) {
-  .modal {
+  .modal-franchise {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -68,7 +68,7 @@
     }
   }
 
-  .close-button {
+  .franchise-close-button {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -90,7 +90,7 @@
       fill: currentColor;
     }
   }
-  .icon-close {
+  .franchise-icon-close {
     width: 20px;
     height: 20px;
   }
@@ -104,12 +104,10 @@
 }
 // Phone
 @media screen and (max-width: $mobile-max) {
-  .modal-form {
+  .modal-farnchise_form {
     padding: 28px 30px;
   }
-  .modal-form_title {
-    width: 221px;
-
+  .modal-franchise_form-title {
     text-align: center;
 
     margin-right: auto;
@@ -119,7 +117,7 @@
     font-family: 'Seymour One';
     line-height: 1.5;
   }
-  .modal-form_subtitle {
+  .modal-franchise_form-subtitle {
     width: 222px;
 
     margin-bottom: 24px;
@@ -127,11 +125,11 @@
     font-size: 14px;
     line-height: 1.4;
   }
-  .modal-form_field {
+  .modal-franchise_form-field {
     display: flex;
     flex-direction: column;
   }
-  .modal-form_input {
+  .modal-franchise_form-input {
     width: 100%;
     height: 32px;
 
@@ -148,13 +146,13 @@
 
       color: $primary-inverse-text-color;
     }
-    .modal-form_field:focus-within &,
-    .modal-form_field:hover & {
+    .modal-franchise_form-field:focus-within &,
+    .modal-franchise_form-field:hover & {
       border: 1px solid $accent-color;
       outline: none;
     }
   }
-  .textarea {
+  .modal-franchise_textarea {
     width: 100%;
     height: 64px;
     resize: none;
@@ -172,13 +170,13 @@
 
       color: $primary-inverse-text-color;
     }
-    .modal-form_field:focus-within &,
-    .modal-form_field:hover & {
+    .modal-franchise_form-field:focus-within &,
+    .modal-franchise_form-field:hover & {
       border: 1px solid $accent-color;
       outline: none;
     }
   }
-  .modal-form_button {
+  .modal-franchise_button {
     max-width: 114px;
     height: 42px;
 
@@ -201,10 +199,10 @@
 
 // tablet
 @media screen and (min-width: $tablet) {
-  .modal-form {
+  .modal-farnchise_form {
     padding: 32px 60px;
   }
-  .modal-form_title {
+  .modal-franchise_form-title {
     width: 322px;
 
     text-align: center;
@@ -217,7 +215,7 @@
     font-size: 20px;
     line-height: 1.4;
   }
-  .modal-form_subtitle {
+  .modal-franchise_form-subtitle {
     width: 448px;
 
     margin-bottom: 32px;
@@ -225,12 +223,12 @@
     font-size: 16px;
     line-height: 1.4;
   }
-  .modal-form_field {
+  .modal-franchise_form-field {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .modal-form_input {
+  .modal-franchise_form-input {
     width: 368px;
     height: 42px;
 
@@ -247,13 +245,13 @@
 
       color: $primary-inverse-text-color;
     }
-    .modal-form_field:focus-within &,
-    .modal-form_field:hover & {
+    .modal-franchise_form-field:focus-within &,
+    .modal-franchise_form-field:hover & {
       border: 1px solid $accent-color;
       outline: none;
     }
   }
-  .textarea {
+  .modal-franchise_textarea {
     width: 368px;
     height: 84px;
     resize: none;
@@ -271,13 +269,13 @@
 
       color: $primary-inverse-text-color;
     }
-    .modal-form_field:focus-within &,
-    .modal-form_field:hover & {
+    .modal-franchise_form-field:focus-within &,
+    .modal-franchise_form-field:hover & {
       border: 1px solid $accent-color;
       outline: none;
     }
   }
-  .modal-form_button {
+  .modal-franchise_button {
     width: 121px;
     height: 42px;
 

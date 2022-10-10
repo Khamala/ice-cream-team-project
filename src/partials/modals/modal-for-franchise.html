@@ -1,28 +1,29 @@
-
-<div class="backdrop franchise-modal__is-hidden"  data-franchise-modal>
-
-  <div class="modal">
-
-    <button type="button" class="close-button" data-franchise-modal-close>
-      <svg class="icon-close svg" width="16" height="16">
+<div class="backdrop franchise-modal__is-hidden" data-franchise-modal>
+  <div class="modal-franchise">
+    <button
+      type="button"
+      class="franchise-close-button"
+      data-franchise-modal-close
+    >
+      <svg class="franchise-icon-close svg" width="16" height="16">
         <use href="./images/sprite.svg#icon-modal-close-icon"></use>
       </svg>
     </button>
-    <form class="modal-form">
-      <p class="modal-form_title">
+    <form class="modal-farnchise_form">
+      <p class="modal-franchise_form-title">
         Thank you for your interest in owning an Ice Cream shop
       </p>
-      <p class="modal-form_subtitle">
+      <p class="modal-franchise_form-subtitle">
         Due to the overwhelming volume of franchise requests we are not
         accepting new franchisee applications at this time. Once the application
         process resumes, we will contact you for further information. Please
         fill out the contact information below and we will reach out for
         additional information. We appreciate your patience.
       </p>
-      <div class="modal-form_field">
-        <label for="name" class="modal-form_label">
+      <div class="modal-franchise_form-field">
+        <label for="name" class="modal-franchise_form-label">
           <input
-            class="modal-form_input"
+            class="modal-franchise_form-input"
             type="text"
             name="name"
             id="name"
@@ -32,10 +33,10 @@
           />
         </label>
       </div>
-      <div class="modal-form_field">
-        <label for="tel" class="modal-form_label">
+      <div class="modal-franchise_form-field">
+        <label for="tel" class="modal-franchise_form-label">
           <input
-            class="modal-form_input"
+            class="modal-franchise_form-input"
             type="tel"
             name="tel"
             id="tel"
@@ -46,10 +47,10 @@
           />
         </label>
       </div>
-      <div class="modal-form_field">
-        <label for="email" class="modal-form_label">
+      <div class="modal-franchise_form-field">
+        <label for="email" class="modal-franchise_form-label">
           <input
-            class="modal-form_input"
+            class="modal-franchise_form-input"
             type="email"
             name="email"
             id="email"
@@ -59,18 +60,20 @@
           />
         </label>
       </div>
-      <div class="modal-form_field">
+      <div class="modal-franchise_form-field">
         <label for="comment" class="form-label">
           <textarea
-            class="textarea"
+            class="modal-franchise_textarea"
             name="comment"
             id="comment"
             placeholder="Comment"
           ></textarea>
         </label>
       </div>
-      <div class="modal-form_field">
-        <button class="modal-form_button button" type="submit">Submit</button>
+      <div class="modal-franchise_form-field">
+        <button class="modal-franchise_button button" type="submit">
+          Submit
+        </button>
       </div>
     </form>
   </div>
