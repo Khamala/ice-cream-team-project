@@ -42,7 +42,7 @@
 
 .reviews {
   padding-top: 80px;
-  padding-bottom: 100px;
+  padding-bottom: 394px;                 // Khama
 }
 
 .reviews__img {
@@ -94,9 +94,10 @@
 @media screen and (min-width: 768px) {
   .reviews {
     padding-top: 60px;
+    padding-bottom: 384px;                    // Khama
   }
 
-  .reviews__content {
+  .reviews__content {        
     height: 138px;
     padding: 29px 80px;
   }
@@ -116,7 +117,7 @@
 @media screen and (min-width: 1200px) {
   .reviews {
     padding-top: 60px;
-    padding-bottom: 196px;   // Khama
+    padding-bottom: 196px;                // Khama
   }
 
   .reviews__text {
