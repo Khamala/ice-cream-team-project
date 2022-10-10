@@ -35,7 +35,7 @@
 
     cursor: pointer;
 
-    transition: color $accent-color;
+    transition: fill $default-transition-time $default-transition-function;
 
     &:hover,
     &:focus {
@@ -82,7 +82,7 @@
 
     cursor: pointer;
 
-    transition: color $accent-color;
+    transition: fill $default-transition-time $default-transition-function;
 
     &:hover,
     &:focus {
@@ -140,6 +140,8 @@
     border: 1px solid #84a178;
     border-radius: 10px;
 
+    transition: color $default-transition-time $default-transition-function;
+
     &::placeholder {
       font-size: 12px;
       line-height: 1.4;
@@ -163,6 +165,8 @@
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid #84a178;
     border-radius: 10px;
+
+    transition: color $default-transition-time $default-transition-function;
 
     &::placeholder {
       font-size: 12px;
@@ -239,6 +243,8 @@
     border: 1px solid #84a178;
     border-radius: 10px;
 
+    transition: border $default-transition-time $default-transition-function;
+
     &::placeholder {
       font-size: 14px;
       line-height: 1.4;
@@ -262,6 +268,8 @@
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid #84a178;
     border-radius: 10px;
+
+    transition: border $default-transition-time $default-transition-function;
 
     &::placeholder {
       font-size: 12px;

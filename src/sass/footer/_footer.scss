@@ -41,6 +41,8 @@
     fill: currentColor;
     background-color: $accent-color;
 
+    transition: color $default-transition-time $default-transition-function;
+
     &:hover,
     &:focus {
       color: $primary-text-color;
@@ -143,6 +145,8 @@
     fill: currentColor;
     background-color: $accent-color;
 
+    transition: color $default-transition-time $default-transition-function;
+
     &:hover,
     &:focus {
       color: $primary-text-color;
@@ -186,7 +190,6 @@
 @media screen and (min-width: $desktop) {
   .footer-container_text {
     display: flex;
-    // justify-content: space-between;
   }
   .footer-container_list {
     display: flex;
