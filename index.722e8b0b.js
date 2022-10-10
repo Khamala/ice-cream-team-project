@@ -1,0 +1,2 @@
+!function(){var e={openIceCaffeeModalBtn:document.querySelector("[data-milkshakes-modal-open]"),closeIceCaffeeModalBtn:document.querySelector("[data-milkshakes-modal-close]"),modal:document.querySelector("[data-milkshakes-modal]")};function o(){e.modal.classList.toggle("milkshakes-modal__is-hidden"),document.body.classList.toggle("no-scroll")}e.openIceCaffeeModalBtn.addEventListener("click",o),e.closeIceCaffeeModalBtn.addEventListener("click",o)}();
+//# sourceMappingURL=index.722e8b0b.js.map
