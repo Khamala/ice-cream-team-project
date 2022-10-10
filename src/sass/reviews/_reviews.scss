@@ -16,7 +16,7 @@
 
 .reviews {
   padding-top: 80px;
-  padding-bottom: 100px;
+  padding-bottom: 196px;
 }
 
 .reviews__container {
@@ -116,6 +116,7 @@
 @media screen and (min-width: 1200px) {
   .reviews {
     padding-top: 60px;
+    padding-bottom: 196px;   // Khama
   }
 
   .reviews__text {
