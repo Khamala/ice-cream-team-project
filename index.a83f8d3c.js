@@ -1,2 +1,2 @@
 !function(){var o={openFranchiseModalBtn:document.querySelector("[data-products-modal-open]"),closeFranchiseModalBtn:document.querySelector("[data-products-modal-close]"),modal:document.querySelector("[data-products-modal]")};function e(){o.modal.classList.toggle("products-modal__is-hidden"),document.body.classList.toggle("no-scroll")}o.openFranchiseModalBtn.addEventListener("click",e),o.closeFranchiseModalBtn.addEventListener("click",e)}();
-//# sourceMappingURL=index.777c1430.js.map
+//# sourceMappingURL=index.a83f8d3c.js.map
