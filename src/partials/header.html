@@ -38,6 +38,23 @@
     </div>
    <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
+          <picture>
+            <source
+            srcset="./images/header/tablet/icecream-logo.png 1x, ./images/header/tablet/icecream-logo@2x.png 2x"
+              media="(min-width: 768px)"
+            />
+
+            <source
+            srcset="./images/header/mobile/icecream-logo.png 1x, ./images/header/mobile/icecream-logo@2x.png 2x"
+              media="(max-width: 767px)"
+            />
+
+            <img
+              class="logo-menu"
+              src="./images/header/desktop/logo-desktop.png"
+              alt="логотип"
+            />
+          </picture>
           <button type="button" class="mobile-menu__button-close" data-menu-close>
             <svg class="mobile-menu__icon-close" width="32" height="32">
               <use href="./images/sprite.svg#icon-modal-close-icon"></use>
@@ -57,7 +74,7 @@
                 <a href="" class="mobile-menu__link link">Contact</a>
               </li>
           </ul>
-          <button type="button" class="button button-buy">Buy now</button>
+          <button type="button" class="button button-buy button-buy-menu">Buy now</button>
         </div> 
     </div>  
 </section>
