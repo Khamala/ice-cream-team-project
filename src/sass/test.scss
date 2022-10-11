@@ -1,0 +1,424 @@
+
+
+
+
+/*
+.hero {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+}
+.container.hero__container {
+  padding-top: 0;
+}
+
+.hero__title {
+  color: #fcfcfc;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  font-family: 'Seymour One', sans-serif;
+  font-style: normal;
+}
+
+.animation {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 75%;
+  overflow: hidden;
+  z-index: -10;
+}
+
+.hero__options {
+  display: flex;
+}
+
+.button-products {
+  height: 24px;
+  width: 62px;
+
+  background-color: transparent;
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  margin-right: 8px;
+  margin-bottom: 56px;
+}
+.button-products:hover {
+  border-color: #0a8817;
+}
+.button-products:focus {
+  color: #fcfcfc;
+  border-color: #0a8817;
+}
+.button-products:disabled {
+  border-color: #ababab;
+}
+
+
+.button-how {
+  width: 82.8px;
+  height: 24px;
+
+  font-size: 8px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-decoration-line: underline;
+
+  color: #f8d24e;
+
+  margin-bottom: 56px;
+  padding: 0;
+}
+.button-how:hover {
+  color: #0a8817;
+}
+.button-how:focus {
+  color: #fcfcfc;
+}
+.button-how:disabled {
+  color: #ababab;
+}
+
+
+.hero__container::after {
+  content: '';
+  width: 157px;
+  height: 207,45px;
+  position: absolute;
+  // background-image: url('../images/hero/mobile/icecream-hero.png');
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    // background-image: url('../images/hero/mobile/icecream-hero@2x.png');
+    background-size: contain;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 257px;
+    height: 325px;
+    // background-image: url('../images/hero/tablet/icecream-hero.png');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      // background-image: url('../images/hero/tablet/icecream-hero@2x.png');
+      background-size: contain;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    width: 447px;
+    height: 561px;
+    background-image: url('../images/hero/desktop/icecream-hero-olga.png');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      // background-image: url('../images/hero/desktop/icecream-hero@2x.png');
+      background-size: contain;
+    }
+  }
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: 0;
+  left: 50%;
+  transform: translate(15%, 5%);
+
+  z-index: -1;
+}
+
+.hero__container::before {
+  content: '';
+  position: absolute;
+  // background-image: url('../images/hero/mobile/icecream-shadow-hero.png');
+
+  width: 157px;
+  height: 207,45px;
+
+  @media screen and (min-width: $tablet) {
+  // background-image: url('../images/hero/tablet/icecream-shadow-hero.png');
+
+    width: 257px;
+    height: 325px;
+  }
+  @media screen and (min-width: $desktop) {
+  // background-image: url('../images/hero/desktop/icecream-shadow-hero.png');
+
+    width: 447px;
+    height: 561px;
+  }
+  top: 50%;
+  left: 50%;
+  transform: translate(10%, -50%);
+  z-index: 2;
+}
+
+.description {
+  // display: block;
+  margin-left: 152px;
+  position: relative;
+  margin-bottom: 13px;
+  @media screen and (min-width: $desktop) {
+    margin-left: 225px;
+    margin-bottom: 65px;
+  }
+}
+
+.description__text {
+  display: none;
+  font-size: 12px;
+  line-height: 1.4;
+  color: white;
+  width: 151px;
+  margin-bottom: 20px;
+  margin-left: 33px;
+  @media screen and (min-width: $tablet) {
+    display: block;
+    // justify-content: baseline;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 32px;
+    margin-left: 14px;
+    width: 200px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+.description::before {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+  content: '';
+  width: 152px;
+  height: 152px;
+  position: absolute;
+  top: -25%;
+  left: -152px;
+  background-repeat: no-repeat;
+  background-image: url('../images/hero/tablet/many-icecreams-hero.png');
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/hero/tablet/many-icecreams-hero@2x.png');
+    background-size: contain;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 225px;
+    height: 225px;
+    background-image: url('../images/hero/desktop/many-icecreams-hero.png');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero/desktop/many-icecreams-hero@2x.png');
+    }
+
+    background-size: contain;
+    top: -50%;
+    left: -225px;
+  }
+
+  z-index: 0;
+}
+
+.description__text-button {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: block;
+    margin-left: 33px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 14px;
+ }
+ }
+
+@media screen and (max-width: 767px) {
+
+  .hero__container {
+    // height: 437px;
+    display: block;
+    // padding: 0 20px;
+  }
+
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.27;
+
+    width: 247px;
+    // height: 392px;
+    margin-left: 0;
+    margin-top: 45px;
+    margin-bottom: 32px;
+  }
+
+  .hero__title--part {
+    font-size: 34px;
+    line-height: 1.26;
+  }
+  .description {
+    display: none;
+  }
+  .objects {
+    display: none;
+}
+}
+
+@media screen and (min-width: 768px) {
+
+  .hero__container {
+    // height: 327px;
+    display: flex;
+    padding: 0 32px;
+  }
+  .hero__title {
+    font-size: 18px;
+    line-height: 1.28;
+
+    width: 181px;
+    // height: 74px;
+    margin-left: 0;
+    margin-top: 18px;
+    margin-bottom: 20px;
+  }
+  .hero__title--part {
+    font-size: 24px;
+    line-height: 0.82;
+  }
+
+  .objects {
+    display: block;
+    margin-left: auto;
+    margin-top: 6px;
+}
+
+.objects__amount {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: #131313;  
+}
+
+.objects__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+
+    text-align: right;
+
+    color: #FCFCFC;
+}
+}
+
+@media screen and (min-width: 1200px) {
+
+  .hero__container {
+    // height: 579px;
+    display: flex;
+    padding: 0 16px;
+  }
+  .hero__title {
+    font-size: 38px;
+    line-height: 1.26;
+
+    width: 367px;
+    // height: 144px;
+    margin-left: 0;
+    margin-top: 33px;
+    margin-bottom: 28px;
+  }
+  .hero__title--part {
+    font-size: 38px;
+    line-height: 1.26;
+  }
+
+  .button-products {
+    width: 134px;
+    height: 42px;
+
+    font-size: 14px;
+    line-height: 1.29;
+
+    margin-right: 12px;
+    margin-bottom: 109px;
+  }
+  .button-how {
+    width: 134px;
+    height: 42px;
+
+    font-size: 14px;
+    line-height: 1.29;
+
+    margin-bottom: 42px;
+  }
+
+//   .description__text{
+//     position: relative;
+//     width: 200px;
+//     height: 80px;
+//   font-size: 14px;
+//   line-height: 1.4;
+//   // margin-left: 239px;
+//   align-items: center;
+
+// color: #FCFCFC;
+// // margin-top: 109px;
+// }
+  .objects {
+    display: block;
+    margin-left: auto;
+    margin-top: 41px;
+}
+
+.objects__amount {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 56px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: #131313;  
+}
+
+.objects__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-align: right;
+
+    color: #FCFCFC;
+}
+}
+
+*/
