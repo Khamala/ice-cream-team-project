@@ -11,6 +11,10 @@
 
 // Sections
 @import './header/index';
+
+// HERO TEST 
+@import './test.scss';
+
 @import './hero/index';
 @import './products/index';
 @import './about/index';
@@ -20,7 +24,3 @@
 @import './contacts/index';
 @import './footer/index';
 @import './modals/index';
-
-
-// TEST
-@import './test.scss';
