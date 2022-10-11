@@ -23,3 +23,21 @@ ul {
 .link {
   text-decoration: none;
 }
+
+.body.no-scroll {
+  overflow: hidden;
+}
+
+.modal-default-backdrop {
+  z-index: 999;
+  height: 100%;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, .2);
+  padding: 93px 15px;
+  transition: opacity .45s cubic-bezier(.4, 0, .2, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  width: 100%;
+}
