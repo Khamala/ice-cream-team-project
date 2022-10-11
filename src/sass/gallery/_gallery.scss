@@ -4,6 +4,12 @@
     justify-content: center;
 }
 
+// .gallery {
+//     background-size: cover;
+//         background-repeat: no-repeat;
+//         background-image:linear-gradient(#84A178 20%, #fcfcfc 20%), url(../images/icecream-bg-block4.jpg);
+// }
+
 @media screen and (max-width:768px) {
     .ice {
         overflow: hidden;
@@ -11,8 +17,9 @@
     }
 
     .gallery {
-        background-color: #F5F5F5;
-        background-image: linear-gradient(#84A178 20%, #F5F5F5 20%);
+        background-color: #fcfcfc;
+        background-image: linear-gradient(#84A178 20%, #fcfcfc 20%);
+        margin-top: -24px;
     }
 }
 
@@ -23,8 +30,9 @@
     }
 
     .gallery {
-        background-color: #F5F5F5;
-        background-image: linear-gradient(#84A178 50%, #F5F5F5 50%);
+        background-color: #fcfcfc;
+        background-image: linear-gradient(#84A178 50%, #fcfcfc 50%);
+        margin-top: -160px;
     }
 }
 
@@ -35,8 +43,9 @@
     }
 
     .gallery {
-        background-color: #F5F5F5;
-        background-image: linear-gradient(#84A178 25%, #F5F5F5 25%);
+        background-color: #fcfcfc;
+        background-image: linear-gradient(#84A178 25%, #fcfcfc 25%);
+        margin-top: -94px;
     }
 }
 
