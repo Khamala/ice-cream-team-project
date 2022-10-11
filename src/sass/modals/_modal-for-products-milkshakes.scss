@@ -54,6 +54,8 @@
     border: 2px solid $accent-color;
     border-radius: 10px;
 
+    z-index: 10;
+
     &__text {
         margin-bottom: 24px;
         font-family: 'Seymour One';
@@ -77,7 +79,8 @@
     &__image {
         display: block;
         width: 27.9vw;
-        height: 27.9vw;;
+        height: 27.9vw;
+        ;
         border-radius: 50%;
     }
 
@@ -116,7 +119,7 @@
         line-height: 2.8;
         border-radius: 50%;
         box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
-    }    
+    }
 
     &__table {
         width: 100%;
@@ -177,9 +180,9 @@
         }
 
         &::placeholder {
-        font-size: 14px;
-        line-height: 1.4;
-        color: $primary-inverse-text-color;
+            font-size: 14px;
+            line-height: 1.4;
+            color: $primary-inverse-text-color;
         }
     }
 
@@ -243,11 +246,11 @@
             width: 131px;
             height: 131px;
         }
-                
+
         &__nutritional-value {
             column-gap: 10px;
         }
-        
+
         &__point {
             row-gap: 5px;
             width: 53px;
@@ -278,7 +281,7 @@
             row-gap: 7px;
             width: 65px;
             height: 90px;
-        
+
             border-radius: 40px;
             font-size: 12px;
         }
@@ -296,7 +299,8 @@
 }
 
 
-.products-modal__is-hidden {
+
+.milkshakes-modal__is-hidden {
     opacity: 0;
     pointer-events: none;
 }

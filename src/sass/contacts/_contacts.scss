@@ -1,5 +1,16 @@
 // Phone
 @media screen and (max-width: $mobile-max) {
+  .contacts-section {
+    position: relative;
+  }
+  .contacts-container {
+    position: absolute;
+    top: -360px;
+    left: 0;
+    right: 0;
+
+    padding-top: 0;
+  }
   .contacts-list {
     display: flex;
     flex-direction: column;
@@ -181,6 +192,17 @@
 
 // tablet
 @media screen and (min-width: $tablet) {
+  .contacts-section {
+    position: relative;
+  }
+  .contacts-container {
+    position: absolute;
+    top: -320px;
+    left: 0;
+    right: 0;
+
+    padding-top: 0;
+  }
   .contacts-list {
     display: flex;
     justify-content: center;
@@ -363,6 +385,17 @@
 }
 // desktop
 @media screen and (min-width: $desktop) {
+  .contacts-section {
+    position: relative;
+  }
+  .contacts-container {
+    position: absolute;
+    top: -96px;
+    left: 0;
+    right: 0;
+
+    padding-top: 0;
+  }
   .contacts-list {
     gap: 32px;
 

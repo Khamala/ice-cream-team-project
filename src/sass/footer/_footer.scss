@@ -1,0 +1,252 @@
+// Phone
+@media screen and (max-width: $mobile-max) {
+  .footer-container {
+    padding-top: 1035px;
+    padding-bottom: 62px;
+  }
+  .footer-title {
+    margin-bottom: 16px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    text-transform: uppercase;
+
+    color: $primary-text-color;
+  }
+  .footer-title_part {
+    margin-bottom: 42px;
+
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.21;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $primary-text-color;
+  }
+  .footer-list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 28px;
+
+    margin-bottom: 38px;
+  }
+  .footer-icon_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+
+    color: $primary-background-color;
+    fill: currentColor;
+    background-color: $accent-color;
+
+    transition: color $default-transition-time $default-transition-function;
+
+    &:hover,
+    &:focus {
+      color: $primary-text-color;
+      fill: currentColor;
+    }
+  }
+  .footer-title_tel {
+    margin-bottom: 16px;
+
+    text-align: right;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+  }
+  .footer-tel_link {
+    color: $primary-text-color;
+  }
+  .footer-tel_link:after {
+    content: '';
+    display: block;
+
+    margin-top: 40px;
+
+    width: 100%;
+    height: 1px;
+    background-color: #e1e1e1;
+  }
+  .footer-copiright {
+    width: 280px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 65px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+
+    text-align: center;
+
+    color: #7a7a7a;
+  }
+}
+
+// tablet
+@media screen and (min-width: $tablet) {
+  .footer-container {
+    padding-top: 246px;
+    padding-bottom: 13px;
+  }
+  .footer-container_text {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-container_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .footer-title {
+    width: 352px;
+
+    margin-bottom: 9px;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.23;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $primary-text-color;
+  }
+  .footer-title_part {
+    width: 340px;
+
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.23;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: $primary-text-color;
+  }
+
+  .footer-list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+
+    margin-bottom: 32px;
+  }
+  .footer-icon_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+
+    color: $primary-background-color;
+    fill: currentColor;
+    background-color: $accent-color;
+
+    transition: color $default-transition-time $default-transition-function;
+
+    &:hover,
+    &:focus {
+      color: $primary-text-color;
+      fill: currentColor;
+    }
+  }
+  .footer-container_copiright::before {
+    content: '';
+    display: block;
+
+    margin-top: 32px;
+    margin-bottom: 14px;
+
+    width: 100%;
+    height: 1px;
+    background-color: #e1e1e1;
+  }
+  .footer-title_tel {
+    text-align: right;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+  }
+  .footer-tel_link {
+    color: $primary-text-color;
+  }
+
+  .footer-copiright {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+
+    text-align: center;
+
+    color: #7a7a7a;
+  }
+}
+
+// desktop
+@media screen and (min-width: $desktop) {
+  .footer-container {
+    padding-top: 548px;
+    padding-bottom: 11px;
+  }
+  .footer-container_text {
+    display: flex;
+  }
+  .footer-container_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .footer-title {
+    width: 504px;
+
+    margin-bottom: 14px;
+
+    font-weight: 400;
+    font-size: 30px;
+  }
+  .footer-title_part {
+    width: 504px;
+
+    font-size: 58px;
+    line-height: 1.22;
+  }
+
+  .footer-list {
+    margin-bottom: 40px;
+  }
+  .footer-container_copiright::before {
+    content: '';
+    display: block;
+
+    margin-top: 54px;
+    margin-bottom: 12px;
+
+    width: 100%;
+    height: 1px;
+    background-color: #e1e1e1;
+  }
+  .footer-title_tel {
+    font-size: 16px;
+  }
+  .footer-tel_link {
+    color: $primary-text-color;
+  }
+
+  .footer-copiright {
+    font-size: 12px;
+    line-height: 1.86;
+  }
+}
