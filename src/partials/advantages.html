@@ -1,7 +1,9 @@
-<section>
-    <section class="advantages">
+<section class="advantages">
+    
         <div class="container">
+
             <h2 class="visually-hidden">Advantages</h2>
+
             <ul class="advantages__list">
                 <li class="advantages__point">
                     <span class="advantages__amount">721</span>
@@ -16,5 +18,26 @@
                     <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
                 </li>
             </ul>
+        </div>
+
+        <div class="container container-gallery gallery">
+            <div class="foto-ice">
+                <picture>
+                    <source srcset="
+                  ./images/gallery/desktop/icecream-gallery.jpg    1x,
+                  ./images/gallery/desktop/icecream-gallery@2x.jpg 2x
+                " media="(min-width:1200px)" />
+                    <source srcset="
+                  ./images/gallery/tablet/icecream-gallery.jpg    1x,
+                  ./images/gallery/tablet/icecream-gallery@2x.jpg 2x
+                " media="(min-width:768px)" />
+                    <source srcset="
+                  ./images/gallery/mobile/icecream-gallery.jpg    1x,
+                  ./images/gallery/mobile/icecream-gallery@2x.jpg 2x
+                " media="(max-width:767px)" />
+        
+                    <img class="ice" src="./images/gallery/desktop/icecream-gallery.jpg" alt="ice" />
+                </picture>
+            </div>
         </div>
 </section>

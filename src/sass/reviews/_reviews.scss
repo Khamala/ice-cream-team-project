@@ -3,6 +3,9 @@
     linear-gradient(#fcfcfc, #fcfcfc);
   background-repeat: no-repeat;
   background-size: 100% auto;
+
+
+
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -15,14 +18,17 @@
 }
 
 .reviews {
-  padding-top: 80px;
+  padding-top: 181px;
   padding-bottom: 196px;
 }
+
 
 .reviews__container {
   margin: 0px;
   margin-left: auto;
   margin-right: auto;
+
+  //padding-top: 451px;     //////////
 }
 
 .swiper {
@@ -40,10 +46,7 @@
   background-color: #84a178;
 }
 
-.reviews {
-  padding-top: 80px;
-  padding-bottom: 394px;                 // Khama
-}
+
 
 .reviews__img {
   display: block;
@@ -93,8 +96,12 @@
 
 @media screen and (min-width: 768px) {
   .reviews {
-    padding-top: 60px;
+    padding-top: 0;
     padding-bottom: 384px;                    // Khama
+  }
+
+  .reviews__container {
+    padding-top: 218px;
   }
 
   .reviews__content {        
@@ -116,11 +123,15 @@
 
 @media screen and (min-width: 1200px) {
   .reviews {
-    padding-top: 60px;
+    //padding-top: 60px;
     padding-bottom: 196px;                // Khama
   }
 
   .reviews__text {
     font-size: 16px;
   }
+
+     .reviews__container {
+       padding-top: 451px;
+     }
 }
