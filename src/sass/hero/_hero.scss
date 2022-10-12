@@ -1,15 +1,177 @@
-.hero{
-  //padding-bottom: 111px;
+
+@media screen and (min-width: $tablet) {
+
+  .hero {
+      position: relative;
+  //  BG
+  
+    }
+
+  .hero__container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  position: relative;
+}
+
+.hero__container::before {
+  position: absolute;
+  z-index: 2;
+  right: 80px;
+  bottom: -1px;
+  content: '';
+  width: 257px;
+  height: 325px;
+
+  background-image: url(../images/hero/tablet/hero-ice-tab-1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto auto;
+}
+.hero__wrapper {
+  padding-bottom: 33px;
+}
+.hero__container::after {
+  position: absolute;
+  right: 80px;
+  bottom: 0px;
+  content: '';
+  width: 266px;
+  height: 342px;
+//////////
+  background-color: rgba(252, 252, 252, 0.44);
+    filter: blur(40px);
+}
+
+.hero__list-btn {
+  display: flex;
+  margin-bottom: 56px;
+  align-items: center;
+}
+
+.hero__btn {
+  border-radius: 8px;
+  border: 2px solid $accent-color;
+  padding: 4px 10px;
+
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero__btn-link {
+  text-decoration: underline;
+  color: $accent-color;
+border-radius: 8px;
+  padding: 4px 10px;
+  font-weight: 600;
+    font-size: 8px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.hero__title {
+  width: 181px;
+
+  margin-bottom: 20px;
+
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.2531px;
+  line-height: 1.28;
+
+  text-transform: uppercase;
+  color: $primary-text-color;
+}
+
+.hero__title--part{
+  
+  font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: uppercase;
+  color: $primary-text-color;
+}
+
+.hero__wrapper-text {
+  display: inline-flex;
+  flex-direction: column;
   position: relative;
 
+  margin-left: 217px;
+}
+
+.hero__wrapper-text::before {
+  position: absolute;
+  left: -217px;
+  bottom: -13px;
+  content: '';
+
+  width: 152px;
+  height: 152px;
+  background-image: url(../images/hero/tablet/hero-plate-tab-1x.png);
+  background-repeat: no-repeat;
+}
+
+.hero__text {
+  width: 151px;
+  margin-bottom: 20px;
+
+  font-size: 12px;
+  line-height: 1.42;
+  color: $primary-text-color;
+}
+
+.objects__amount {
+  margin-bottom: 4px;
+
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.21;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $primary-inverse-text-color;
+}
+
+.list-objects {
+  margin-right: 0px;
+}
+
+.list-objects__element {
+  margin-bottom: 20px;
+}
+
+.objects__text {
+  font-size: 8px;
+  line-height: 1.21;
+  text-align: right;
+  color: $primary-text-color;
+}
+
+}
+
+
+
+@media screen and (min-width: $desktop) {
+
+.hero{
+  position: relative;
 
   background-image: url(../images/hero/desktop/dots.png);
   background-position: 50% 100%;
   background-size: auto auto;
   background-repeat: no-repeat;
- 
 }
-
 
 .hero__container{
   display: flex;
@@ -36,7 +198,7 @@
 .hero__wrapper {
   padding-bottom: 111px;
 }
-/**/
+
 .hero__container::after {
   position: absolute;
   right: 120px;
@@ -49,12 +211,9 @@
     filter: blur(50px);
 }
 
-
 .hero__list-btn{
   display: flex;
-
   margin-bottom: 110px;
-  
 }
 
 .hero__btn{
@@ -65,7 +224,6 @@
   text-decoration: underline;
   color: $accent-color;
 }
-
 
 .hero__title{
   width: 367px;
@@ -118,6 +276,8 @@
 
 
 .objects__amount{
+  margin-bottom: 4px;
+
   font-weight: 900;
   font-size: 46px;
   line-height: 1.22;
@@ -133,11 +293,19 @@
   margin-right: 16px;
 }
 
+.list-objects__element{
+  margin-bottom: 16px;
+}
+
 .objects__text{
+  font-size: 14px;
   line-height: 1.21;
   text-align: right;
   color: $primary-text-color;
 }
+
+}
+
 
 
 
