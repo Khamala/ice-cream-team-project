@@ -1,21 +1,56 @@
 .hero{
   padding-bottom: 111px;
+  position: relative;
+
+
+  background-image: url(../images/hero/desktop/dots.png);
+  background-position: left 0px bottom 7px;
+  background-size: auto auto;
+  background-repeat: no-repeat;
+ 
 }
 
 
 .hero__container{
-
   display: flex;
-
+  justify-content: space-between;
   padding-top: 60px;
 
+}
+
+.hero__container::before{
+  position: absolute;
+    right: 120px;
+    bottom: -70px;
+    content: '';
+    width: 447px;
+    height: 590px;
+    
+    background-image: url(../images/Rectangle\ 23.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto auto;
+}
+
+.hero__container::after {
+  position: absolute;
+  right: 120px;
+  bottom: 0px;
+  content: '';
+
+  width: 447px;
+  height: 561px;
+  background-image: url(../images/hero/desktop/icecream-hero.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto auto;
 }
 
 
 .hero__list-btn{
   display: flex;
 
-  margin-bottom: 109px;
+  margin-bottom: 110px;
   
 }
 
@@ -57,7 +92,7 @@
 .hero__wrapper-text::before {
   position: absolute;
   left: -250px;
-  bottom: -56px;
+  bottom: -40px;
   content: '';
 
   width: 225px;
@@ -66,9 +101,6 @@
   background-repeat: no-repeat;
 
 }
-
-  
-
 
 .hero__text{
 
@@ -80,6 +112,30 @@
   line-height: 1.43;
   color: $primary-text-color;
 }
+
+
+.objects__amount{
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 1.22;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  
+  color: $primary-inverse-text-color;
+}
+
+
+.list-objects{
+  margin-right: 16px;
+}
+
+.objects__text{
+  line-height: 1.21;
+  text-align: right;
+  color: $primary-text-color;
+}
+
 
 
 
