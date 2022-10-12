@@ -1,5 +1,5 @@
 .hero{
-  padding-bottom: 111px;
+  //padding-bottom: 111px;
   position: relative;
 
 
@@ -15,11 +15,12 @@
   display: flex;
   justify-content: space-between;
   padding-top: 60px;
-
+  position: relative;
 }
 
 .hero__container::before{
   position: absolute;
+  z-index: 2;
     right: 120px;
     bottom: -10px;
     content: '';
@@ -31,7 +32,11 @@
     background-position: center;
     background-size: auto auto;
 }
-/*
+
+.hero__wrapper {
+  padding-bottom: 111px;
+}
+/**/
 .hero__container::after {
   position: absolute;
   right: 120px;
@@ -40,12 +45,10 @@
 
   width: 447px;
   height: 561px;
-  background-image: url(../images/Rectangle\ 23.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto auto;
+  background: rgba(252, 252, 252, 0.44);
+    filter: blur(50px);
 }
-*/
+
 
 .hero__list-btn{
   display: flex;
