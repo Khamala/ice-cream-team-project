@@ -1,0 +1,2 @@
+!function(){var o={openBuyModalBtn:document.querySelector("[data-buy-modal-open]"),closeBuyModalBtn:document.querySelector("[data-buy-modal-close]"),modal:document.querySelector("[data-buy-modal]"),openBuyMobModalBtn:document.querySelector("[data-buy-mob-modal-open]")};function e(){o.modal.classList.toggle("buynow-modal__is-hidden"),document.body.classList.toggle("no-scroll")}o.openBuyModalBtn.addEventListener("click",e),o.openBuyMobModalBtn.addEventListener("click",e),o.closeBuyModalBtn.addEventListener("click",e)}();
+//# sourceMappingURL=index.e70627ed.js.map
