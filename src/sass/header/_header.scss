@@ -168,6 +168,8 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    transition: transform 1000ms;
+    transform: translateX(0)
   }
   
   .mobile-menu__container {
@@ -214,9 +216,7 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 1.22;
-
-color: #FCFCFC;
-
+    color: #FCFCFC;
     transition: color $default-transition-time $default-transition-function;
 
     &:hover,
@@ -258,6 +258,8 @@ color: #FCFCFC;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    transition: transform 1000ms;
+    transform: translateX(0)
   }
   
   .mobile-menu__container {
@@ -324,4 +326,9 @@ color: #FCFCFC;
   .mobile-menu__item:not(:last-child) {
     margin-bottom: 40px;
   }
+}
+
+
+.hero__btn-linkp{
+  color: black;
 }
