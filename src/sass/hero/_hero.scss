@@ -1,6 +1,89 @@
+.hero{
+  padding-bottom: 111px;
+}
+
+
+.hero__container{
+
+  display: flex;
+
+  padding-top: 60px;
+
+}
+
+
+.hero__list-btn{
+  display: flex;
+
+  margin-bottom: 109px;
+  
+}
+
+.hero__btn{
+  border: 2px solid $accent-color;
+}
+
+.hero__btn-link{
+  text-decoration: underline;
+  color: $accent-color;
+}
+
+
+.hero__title{
+  width: 367px;
+
+  margin-bottom: 28px;
+
+  font-family: 'Seymour One', sans-serif;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $primary-text-color;
+}
+
+// 
+
+.hero__wrapper-text{
+  display: inline-flex;
+  flex-direction: column;
+
+  position: relative;
+
+  margin-left: 250px;
+}
+
+.hero__wrapper-text::before {
+  position: absolute;
+  left: -250px;
+  bottom: -56px;
+  content: '';
+
+  width: 225px;
+  height: 225px;
+  background-image: url(../images/hero/desktop/many-icecreams-hero.png);
+  background-repeat: no-repeat;
+
+}
+
+  
+
+
+.hero__text{
+
+  width: 200px;
+
+  margin-bottom: 32px;
+
+  font-size: 14px;
+  line-height: 1.43;
+  color: $primary-text-color;
+}
 
 
 
+/*
 .hero {
   position: relative;
   z-index: 0;
@@ -419,3 +502,4 @@
 }
 }
 
+*/
