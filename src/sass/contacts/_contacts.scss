@@ -160,8 +160,20 @@
     &:focus {
       background-color: $button-hover-bg-color;
       color: $primary-text-color;
+      &::after {
+        content: url(../images/about/icon-modal-button-white.svg);
+      }
     }
   }
+  .button-franchise::after,
+  .button-locations::after {
+    content: url(../images/about/icon-modal-btn.png);
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 8px;
+    transition: color $default-transition-time $default-transition-function;
+  }
+
   .button-franchise {
     margin-bottom: 0px;
 
@@ -184,9 +196,6 @@
       color: $primary-text-color;
       background-color: $primary-background-color;
     }
-  }
-  .icon-button {
-    margin-left: 8px;
   }
 }
 
@@ -353,9 +362,19 @@
     &:focus {
       background-color: $button-hover-bg-color;
       color: $primary-text-color;
+      &::after {
+        content: url(../images/about/icon-modal-button-white.svg);
+      }
     }
   }
-
+  .button-franchise::after,
+  .button-locations::after {
+    content: url(../images/about/icon-modal-btn.png);
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 8px;
+    transition: color $default-transition-time $default-transition-function;
+  }
   .button-franchise {
     margin-right: 0px;
 
