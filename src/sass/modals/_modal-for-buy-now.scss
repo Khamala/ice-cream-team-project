@@ -2,7 +2,7 @@
 @media screen and (max-width: $mobile-max) {
   .modal-buynow {
     position: absolute;
-    top: 50%;
+    top: 50px;
     left: 50%;
 
     width: calc(100% - 40px);
@@ -13,7 +13,7 @@
     border: 2px solid #f8d24e;
     border-radius: 10px;
 
-    transform: translate(-50%, -50%) scale(1);
+    transform: translateX(-50%) scale(1);
     transition: transform $default-transition-time $default-transition-function,
       scale $default-transition-time $default-transition-function;
 
@@ -49,7 +49,7 @@
 @media screen and (min-width: $tablet) {
   .modal-buynow {
     position: absolute;
-    top: 50%;
+    top: 50px;
     left: 50%;
 
     width: 568px;
@@ -59,12 +59,12 @@
     border: 2px solid #f8d24e;
     border-radius: 10px;
 
-    transform: translate(-50%, -50%) scale(1);
+    transform: translateX(-50%) scale(1);
     transition: transform $default-transition-time $default-transition-function,
       scale $default-transition-time $default-transition-function;
 
     .backdrop.is-hidden & {
-      transform: translate(-50%, -50%) scale(1.1);
+      transform: translateX(-50%) scale(1.1);
     }
   }
 
