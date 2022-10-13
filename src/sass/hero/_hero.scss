@@ -2,7 +2,11 @@
 
   .hero {
       position: relative;
-      //  BG
+
+      //background-image: url(../images/hero/desktop/dots.png);
+        //background-position: 50% 100%;
+        //background-size: auto auto;
+        //background-repeat: no-repeat; 
     }
 
     .hero__container{
@@ -138,11 +142,16 @@
 
 
 
+            // TABLET
+
 @media screen and (min-width: $tablet) and (max-width: 1199px) {
 
   .hero {
       position: relative;
-  //  BG
+      background-image: url(../images/hero/tablet/hero-bg-tab-1x.png);
+      background-position: 50% 100%;
+      background-size: auto auto;
+      background-repeat: no-repeat;
   
     }
 
