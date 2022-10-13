@@ -1,5 +1,144 @@
+@media screen and (max-width: $tablet) {
 
-@media screen and (min-width: $tablet) {
+  .hero {
+      position: relative;
+      //  BG
+    }
+
+    .hero__container{
+  //display: flex;
+  //justify-content: space-between;
+  padding-top: 40px;
+  position: relative;
+}
+
+.hero__container::before {
+  position: absolute;
+  z-index: 2;
+  right: 80px;
+  bottom: -1px;
+  content: '';
+  width: 170px;
+  height: 219px;
+
+  background-image: url(../images/hero/mobile/hero-ict-mob-1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.hero__wrapper {
+  padding-bottom: 33px;
+}
+
+.hero__container::after {
+  position: absolute;
+  right: 80px;
+  bottom: 0px;
+  content: '';
+  width: 266px;
+  height: 342px;
+  //////////
+  background-color: rgba(252, 252, 252, 0.44);
+  filter: blur(70px);
+}
+
+.hero__list-btn {
+  display: flex;
+  margin-bottom: 239px;
+  align-items: center;
+}
+
+.hero__btn {
+  border-radius: 8px;
+  border: 2px solid $accent-color;
+  padding: 4px 10px;
+
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__btn-link {
+  text-decoration: underline;
+  color: $accent-color;
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+.hero__title {
+  width: 247px;
+
+  margin-bottom: 32px;
+
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $primary-text-color;
+}
+
+.hero__title--part {
+
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: $primary-text-color;
+}
+
+.hero__wrapper-text {
+  display: none;
+}
+
+.hero__wrapper-text::before {
+  display: none;
+}
+
+.hero__wrapper-text::before {
+  display: none;
+}
+
+.hero__text {
+  display: none;
+}
+
+.objects__amount {
+  display: none;
+}
+
+.list-objects {
+  display: none;
+}
+
+.list-objects__element {
+  display: none;
+}
+
+.objects__text {
+  display: none;
+}
+
+}
+
+
+
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
 
   .hero {
       position: relative;
@@ -31,6 +170,7 @@
 .hero__wrapper {
   padding-bottom: 33px;
 }
+
 .hero__container::after {
   position: absolute;
   right: 80px;
