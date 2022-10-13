@@ -169,7 +169,8 @@
     visibility: visible;
     pointer-events: auto;
     transition: transform 1000ms;
-    transform: translateX(0)
+    transform: translateX(0);
+    overflow: scroll;
   }
   
   .mobile-menu__container {
@@ -259,7 +260,8 @@
     visibility: visible;
     pointer-events: auto;
     transition: transform 1000ms;
-    transform: translateX(0)
+    transform: translateX(0);
+    overflow: scroll;
   }
   
   .mobile-menu__container {
@@ -328,7 +330,3 @@ color: #FCFCFC;
   }
 }
 
-
-.hero__btn-linkp{
-  color: black;
-}
