@@ -25,7 +25,10 @@
   .hero__container::before {
     position: absolute;
     z-index: 2;
-    right: 140px;
+
+    right: 45%;
+    transform: translateX(40%);
+
     bottom: -1px;
     content: '';
     width: 170px;
