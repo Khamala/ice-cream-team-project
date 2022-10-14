@@ -232,17 +232,12 @@
   .modal-picture_milkshake::before {
     background-image: url(../images/modal/buy-now-modal/milkshake-buy-now-modal.png);
   }
-  .container-subtitle {
-    position: relative;
-
-    width: 130px;
-  }
   .modal-buynow_subtitle-icecream,
   .modal-buynow_subtitle-coffee,
   .modal-buynow_subtitle-milkshake {
     position: absolute;
-    top: 80px;
-    left: 20px;
+    top: 232px;
+    left: 87px;
 
     font-weight: 700;
     font-size: 16px;
@@ -252,10 +247,10 @@
     text-transform: uppercase;
   }
   .modal-buynow_subtitle-coffee {
-    left: 15px;
+    top: 450px;
   }
   .modal-buynow_subtitle-milkshake {
-    left: 15px;
+    top: 665px;
   }
 
   .modal-buynow__input {
@@ -269,7 +264,7 @@
     border: 1px solid #84a178;
     border-radius: 10px;
 
-    transition: color $default-transition-time $default-transition-function;
+    transition: border $default-transition-time $default-transition-function;
 
     &::placeholder {
       font-size: 12px;
@@ -277,8 +272,8 @@
 
       color: $primary-inverse-text-color;
     }
-    .modal-franchise_form-field:focus-within &,
-    .modal-franchise_form-field:hover & {
+    .modal-buynow__label:focus-within &,
+    .modal-buynow__label:hover & {
       border: 1px solid $accent-color;
       outline: none;
     }
@@ -296,7 +291,7 @@
     border: 1px solid #84a178;
     border-radius: 10px;
 
-    transition: color $default-transition-time $default-transition-function;
+    transition: border $default-transition-time $default-transition-function;
 
     &::placeholder {
       font-size: 12px;
@@ -304,8 +299,8 @@
 
       color: $primary-inverse-text-color;
     }
-    .modal-franchise_form-field:focus-within &,
-    .modal-franchise_form-field:hover & {
+    .modal-buynow__label:focus-within &,
+    .modal-buynow__label:hover & {
       border: 1px solid $accent-color;
       outline: none;
     }
@@ -461,17 +456,13 @@
   .modal-picture_milkshake::before {
     background-image: url(../images/modal/buy-now-modal/milkshake-buy-now-modal.png);
   }
-  .container-subtitle {
-    position: relative;
 
-    width: 130px;
-  }
   .modal-buynow_subtitle-icecream,
   .modal-buynow_subtitle-coffee,
   .modal-buynow_subtitle-milkshake {
     position: absolute;
-    top: 80px;
-    left: 20px;
+    top: 230px;
+    left: 70px;
 
     font-weight: 700;
     font-size: 16px;
@@ -481,10 +472,10 @@
     text-transform: uppercase;
   }
   .modal-buynow_subtitle-coffee {
-    left: 15px;
+    left: 230px;
   }
   .modal-buynow_subtitle-milkshake {
-    left: 15px;
+    left: 392px;
   }
   .modal-buynow-container-label {
     display: flex;
@@ -504,7 +495,7 @@
     border: 1px solid #84a178;
     border-radius: 10px;
 
-    transition: color $default-transition-time $default-transition-function;
+    transition: border $default-transition-time $default-transition-function;
 
     &::placeholder {
       font-size: 14px;
@@ -512,8 +503,8 @@
 
       color: $primary-inverse-text-color;
     }
-    .modal-franchise_form-field:focus-within &,
-    .modal-franchise_form-field:hover & {
+    .modal-buynow__label:focus-within &,
+    .modal-buynow__label:hover & {
       border: 1px solid $accent-color;
       outline: none;
     }
@@ -531,7 +522,7 @@
     border: 1px solid #84a178;
     border-radius: 10px;
 
-    transition: color $default-transition-time $default-transition-function;
+    transition: border $default-transition-time $default-transition-function;
 
     &::placeholder {
       font-size: 14px;
@@ -539,8 +530,8 @@
 
       color: $primary-inverse-text-color;
     }
-    .modal-franchise_form-field:focus-within &,
-    .modal-franchise_form-field:hover & {
+    .modal-buynow__label:focus-within &,
+    .modal-buynow__label:hover & {
       border: 1px solid $accent-color;
       outline: none;
     }
@@ -563,7 +554,6 @@
     }
   }
 }
-
 
 .buynow-modal__is-hidden {
   opacity: 0;
